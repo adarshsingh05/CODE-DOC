@@ -31,7 +31,7 @@ export default function GitHubDocsLanding() {
     
     try {
       // Send request to localhost:5000/generate
-      const response = await fetch('http://localhost:5000/api/docs/generate', {
+      const response = await fetch('https://code-doc-1.onrender.com/api/docs/generate', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',
