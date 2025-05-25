@@ -45,6 +45,7 @@ export default function GitHubDocsLanding() {
       
       const data = await response.json()
       setDocContent(data.documentation || "# Documentation could not be generated")
+      console.log("Generated Documentation:", data.documentation)
       
     } catch (err) {
       console.error("Error fetching documentation:", err)

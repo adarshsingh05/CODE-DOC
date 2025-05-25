@@ -8,6 +8,8 @@ const app = express();
 app.use(cors());
 app.use(express.json());
 
+
+
 // Routes
 const docRoutes = require("./routes/docRoutes");
 app.use("/api/docs", docRoutes);
